@@ -1,0 +1,37 @@
+{
+  "SDE": [
+    "python", "java", "c++", "data structures", "algorithms",
+    "oop", "sql", "git", "rest api", "docker",
+    "linux", "operating systems", "dbms", "computer networks", "system design",
+    "javascript", "microservices", "ci/cd", "unit testing", "aws",
+    "kubernetes", "multithreading", "design patterns", "spring boot", "agile"
+  ],
+  "Data Analyst": [
+    "sql", "python", "excel", "pandas", "numpy",
+    "tableau", "power bi", "statistics", "data visualization", "data cleaning",
+    "etl", "matplotlib", "seaborn", "data analysis", "dashboards",
+    "a/b testing", "hypothesis testing", "regression", "mysql", "postgresql",
+    "jupyter", "data warehousing", "r programming", "google sheets", "git"
+  ],
+  "ML Engineer": [
+    "python", "machine learning", "deep learning", "tensorflow", "pytorch",
+    "scikit-learn", "pandas", "numpy", "nlp", "computer vision",
+    "opencv", "neural networks", "cnn", "rnn", "transformers",
+    "model deployment", "mlops", "docker", "git", "sql",
+    "feature engineering", "model evaluation", "data preprocessing", "hugging face", "statistics"
+  ],
+  "Embedded": [
+    "c", "c++", "embedded c", "microcontrollers", "arduino",
+    "stm32", "arm cortex", "rtos", "freertos", "i2c",
+    "spi", "uart", "can bus", "gpio", "interrupts",
+    "adc", "pwm", "raspberry pi", "esp32", "firmware",
+    "iot", "pcb design", "debugging", "linux", "git"
+  ],
+  "Web Developer": [
+    "html", "css", "javascript", "typescript", "react",
+    "node.js", "express.js", "rest api", "git", "responsive design",
+    "tailwind css", "bootstrap", "mongodb", "sql", "next.js",
+    "redux", "webpack", "vite", "web accessibility", "jest",
+    "docker", "authentication", "jwt", "postgresql", "github"
+  ]
+}

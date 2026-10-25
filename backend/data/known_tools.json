@@ -1,0 +1,23 @@
+{
+  "_help": "process_keywords: lowercase text; a running process whose name or path contains one of these is flagged. allow_processes: exact lowercase process names that are never flagged (add normal apps here if they cause false alerts). Run 'python shield.py' to see what your laptop reports.",
+  "process_keywords": [
+    "parakeet",
+    "lockedin",
+    "cluely",
+    "finalround",
+    "interviewcoder",
+    "interview-coder",
+    "verveai",
+    "aiapply",
+    "interviewsolver"
+  ],
+  "allow_processes": [
+    "textinputhost.exe",
+    "shellexperiencehost.exe",
+    "startmenuexperiencehost.exe",
+    "searchhost.exe",
+    "searchapp.exe",
+    "lockapp.exe",
+    "systemsettings.exe"
+  ]
+}

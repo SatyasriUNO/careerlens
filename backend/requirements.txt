@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+python-multipart
+requests
+pymupdf
+faster-whisper
+av>=15,<19
+psutil

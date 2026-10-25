@@ -1,0 +1,13 @@
+{
+  "transcript": "I am a final-year computer science student who enjoys building web apps...",
+  "input_mode": "voice",
+  "speech": { "wpm": 138, "filler_count": 4, "long_pauses": 1, "duration_s": 52 },
+  "gaze": { "eye_contact_pct": 71, "look_away_count": 3, "face_present_pct": 98, "tracking_quality": "good", "duration_s": 52.4 },
+  "evaluation": {
+    "score": 7, "clarity": 8,
+    "strengths": ["Clear structure", "Mentioned a real project"],
+    "missing_points": ["Why this company or role"],
+    "better_answer": "I'm a final-year CSE student who builds full-stack apps. My Library App cut load time by 40%..."
+  },
+  "next_question": { "id": "q2", "index": 2, "total": 5, "type": "claim_probe", "text": "You wrote that you cut page load time by 40%. How did you measure that?" }
+}

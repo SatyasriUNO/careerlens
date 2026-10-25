@@ -1,0 +1,22 @@
+{
+  "resume_id": "r_001",
+  "role": "SDE",
+  "parsed": {
+    "name": "Asha",
+    "skills": ["Python", "SQL", "React"],
+    "projects": [{ "title": "Library App", "bullets": ["Built a REST API for 500 users", "Cut page load time by 40%"] }],
+    "experience": [],
+    "education": ["B.E. CSE, 2027"]
+  },
+  "ats_score": 72,
+  "ats_checks": [
+    { "name": "Contact details present", "passed": true, "tip": "" },
+    { "name": "Bullets contain numbers", "passed": false, "tip": "Add measurable results to more bullet points" }
+  ],
+  "keywords": { "matched": ["python", "sql", "react"], "missing": ["git", "docker"] },
+  "feedback": {
+    "strengths": ["Clear project section with measurable results"],
+    "weaknesses": ["No internship or work experience listed"],
+    "rewrites": [{ "original": "Worked on a website", "improved": "Built a React website used by 200 students, reducing enquiry emails by 30%" }]
+  }
+}

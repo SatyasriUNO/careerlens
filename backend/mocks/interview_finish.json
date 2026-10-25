@@ -1,0 +1,21 @@
+{
+  "session_id": "s_001",
+  "role": "SDE",
+  "scores": { "communication": 74, "confidence": 66, "technical": 70, "resume": 72 },
+  "score_notes": { "communication": "measured", "confidence": "measured" },
+  "answers": [
+    {
+      "question": "Tell me about yourself and why this role.",
+      "type": "intro",
+      "transcript": "I am a final-year computer science student...",
+      "input_mode": "voice",
+      "speech": { "wpm": 138, "filler_count": 4, "long_pauses": 1, "duration_s": 52 },
+      "gaze": { "eye_contact_pct": 71, "look_away_count": 3, "face_present_pct": 98, "tracking_quality": "good", "duration_s": 52.4 },
+      "evaluation": { "score": 7, "clarity": 8, "strengths": ["Clear structure"], "missing_points": ["Why this role"], "better_answer": "..." }
+    }
+  ],
+  "roadmap": [
+    { "skill": "Docker", "why": "Missing keyword for SDE", "resources": [{ "title": "Docker official getting started", "url": "https://docs.docker.com/get-started/" }], "days": "1-3" }
+  ],
+  "integrity": { "status": "clear", "events": [], "reason": "" }
+}

@@ -1,0 +1,333 @@
+{
+  "intro": "Tell me about yourself and why this role.",
+  "roles": [
+    "SDE",
+    "Data Analyst",
+    "ML Engineer",
+    "Embedded",
+    "Web Developer"
+  ],
+  "technical": {
+    "SDE": [
+      {
+        "id": "t_sde_1",
+        "difficulty": "easy",
+        "question": "What is the difference between a process and a thread?",
+        "key_points": [
+          "A process has its own separate memory space",
+          "Threads of one process share the same memory",
+          "Switching between threads is cheaper than between processes",
+          "Shared memory means threads need synchronisation such as locks"
+        ]
+      },
+      {
+        "id": "t_sde_2",
+        "difficulty": "medium",
+        "question": "How does a hash table work, and what is its time complexity?",
+        "key_points": [
+          "A hash function maps a key to an array index",
+          "Average lookup, insert and delete are O(1)",
+          "Collisions are handled by chaining or open addressing",
+          "Worst case becomes O(n) when many keys collide"
+        ]
+      },
+      {
+        "id": "t_sde_3",
+        "difficulty": "medium",
+        "question": "What is a deadlock and how can you prevent it?",
+        "key_points": [
+          "Two or more threads wait forever for resources held by each other",
+          "Needs mutual exclusion, hold and wait, no preemption and circular wait",
+          "Breaking any one condition prevents deadlock",
+          "Acquiring locks in a fixed global order is a common prevention"
+        ]
+      },
+      {
+        "id": "t_be_2",
+        "difficulty": "medium",
+        "question": "Explain SQL injection and how to prevent it.",
+        "key_points": [
+          "Attack inserts SQL via unsanitised user input",
+          "Parameterised queries prevent injection",
+          "ORM and input validation add defence layers"
+        ]
+      },
+      {
+        "id": "t_be_3",
+        "difficulty": "medium",
+        "question": "What is indexing in a database?",
+        "key_points": [
+          "Index speeds up reads but slows writes",
+          "B-tree is the common index structure",
+          "Wrong indexes increase storage and write cost"
+        ]
+      }
+    ],
+    "Data Analyst": [
+      {
+        "id": "t_dt_2",
+        "difficulty": "medium",
+        "question": "Explain ETL.",
+        "key_points": [
+          "Extract pulls data from sources",
+          "Transform cleans and reshapes the data",
+          "Load writes it to the target store"
+        ]
+      },
+      {
+        "id": "t_dt_4",
+        "difficulty": "easy",
+        "question": "What is SQL window function?",
+        "key_points": [
+          "Runs a calculation across a row set related to the current row",
+          "Does not collapse rows like GROUP BY",
+          "ROW_NUMBER and RANK are common examples"
+        ]
+      },
+      {
+        "id": "t_da_1",
+        "difficulty": "easy",
+        "question": "What is the difference between WHERE and HAVING in SQL?",
+        "key_points": [
+          "WHERE filters rows before grouping",
+          "HAVING filters groups after GROUP BY",
+          "HAVING can use aggregate functions like COUNT or SUM"
+        ]
+      },
+      {
+        "id": "t_da_2",
+        "difficulty": "medium",
+        "question": "How would you handle missing values in a dataset?",
+        "key_points": [
+          "First measure how much data is missing and whether there is a pattern",
+          "Drop rows or columns when only a small share is missing",
+          "Impute with mean, median or mode, or forward fill for time series",
+          "Document the choice because it can bias the analysis"
+        ]
+      },
+      {
+        "id": "t_da_3",
+        "difficulty": "easy",
+        "question": "When would you use the median instead of the mean?",
+        "key_points": [
+          "The mean is pulled by outliers",
+          "The median is robust for skewed data",
+          "Income or house prices are typical examples where the median is better"
+        ]
+      }
+    ],
+    "ML Engineer": [
+      {
+        "id": "t_ml_1",
+        "difficulty": "easy",
+        "question": "What is overfitting and how do you prevent it?",
+        "key_points": [
+          "The model learns noise in the training data",
+          "High training accuracy but low validation or test accuracy",
+          "Prevent with more data, regularisation such as L1, L2 or dropout",
+          "Use cross-validation, early stopping or a simpler model"
+        ]
+      },
+      {
+        "id": "t_ml_2",
+        "difficulty": "medium",
+        "question": "Explain the bias-variance trade-off.",
+        "key_points": [
+          "Bias is error from overly simple assumptions and causes underfitting",
+          "Variance is sensitivity to the training data and causes overfitting",
+          "Reducing one usually increases the other",
+          "The goal is the model complexity with the lowest total error"
+        ]
+      },
+      {
+        "id": "t_ml_3",
+        "difficulty": "medium",
+        "question": "What is the difference between precision and recall?",
+        "key_points": [
+          "Precision is TP divided by TP plus FP",
+          "Recall is TP divided by TP plus FN",
+          "Improving one often lowers the other",
+          "F1 score is the harmonic mean of precision and recall"
+        ]
+      },
+      {
+        "id": "t_ml_4",
+        "difficulty": "easy",
+        "question": "Why do we split data into training, validation and test sets?",
+        "key_points": [
+          "The training set is used to fit the model parameters",
+          "The validation set is used to tune hyperparameters and choose models",
+          "The test set gives an unbiased final estimate and is used only once"
+        ]
+      },
+      {
+        "id": "t_ml_5",
+        "difficulty": "medium",
+        "question": "How does a convolutional neural network work?",
+        "key_points": [
+          "Convolution layers slide small learned filters over the image",
+          "Filters share weights, so there are far fewer parameters than a dense network",
+          "Pooling layers reduce spatial size",
+          "Early layers detect edges and later layers detect complex features"
+        ]
+      }
+    ],
+    "Embedded": [
+      {
+        "id": "t_em_1",
+        "difficulty": "easy",
+        "question": "What is the difference between polling and interrupts?",
+        "key_points": [
+          "Polling repeatedly checks a status flag and wastes CPU time",
+          "An interrupt lets hardware signal the CPU when an event happens",
+          "The CPU runs an interrupt service routine then returns",
+          "ISRs should be short and must not block"
+        ]
+      },
+      {
+        "id": "t_em_2",
+        "difficulty": "medium",
+        "question": "What does the volatile keyword do in C, and when do you use it?",
+        "key_points": [
+          "It tells the compiler the value can change outside normal program flow",
+          "The compiler must not optimise away reads or writes",
+          "Used for hardware registers and variables shared with an ISR",
+          "volatile does not make an operation atomic"
+        ]
+      },
+      {
+        "id": "t_em_3",
+        "difficulty": "medium",
+        "question": "Compare I2C and SPI.",
+        "key_points": [
+          "I2C uses two wires, SDA and SCL, with device addresses",
+          "SPI uses MOSI, MISO, SCK and a chip-select line per device",
+          "SPI is full duplex and usually faster",
+          "I2C needs fewer pins when many devices share the bus"
+        ]
+      },
+      {
+        "id": "t_em_4",
+        "difficulty": "medium",
+        "question": "When would you use an RTOS instead of a bare-metal super loop?",
+        "key_points": [
+          "An RTOS schedules tasks by priority with predictable timing",
+          "It provides semaphores, mutexes and queues for task communication",
+          "A super loop is simpler with less memory overhead",
+          "Use an RTOS when several tasks have different timing deadlines"
+        ]
+      },
+      {
+        "id": "t_em_5",
+        "difficulty": "easy",
+        "question": "What is PWM and where is it used?",
+        "key_points": [
+          "The signal switches on and off at a fixed frequency",
+          "Duty cycle is the share of time the signal is on",
+          "Duty cycle controls the average voltage or power",
+          "Used for motor speed, LED brightness and servo control"
+        ]
+      }
+    ],
+    "Web Developer": [
+      {
+        "id": "t_fe_1",
+        "difficulty": "easy",
+        "question": "What is the difference between == and === in JavaScript?",
+        "key_points": [
+          "== performs type coercion before comparison",
+          "=== checks both value and type without coercion",
+          "NaN === NaN is false"
+        ]
+      },
+      {
+        "id": "t_fe_3",
+        "difficulty": "medium",
+        "question": "What is virtual DOM and why is it used?",
+        "key_points": [
+          "Virtual DOM is a lightweight JS copy of the real DOM",
+          "Diffing algorithm minimizes direct DOM mutations",
+          "Batch updates reduce reflow/repaint cost"
+        ]
+      },
+      {
+        "id": "t_fe_4",
+        "difficulty": "medium",
+        "question": "Explain event delegation.",
+        "key_points": [
+          "Single listener on parent handles events for children",
+          "Uses event bubbling to capture target",
+          "Reduces memory usage vs individual listeners"
+        ]
+      },
+      {
+        "id": "t_fe_5",
+        "difficulty": "easy",
+        "question": "What is the difference between let, const, and var?",
+        "key_points": [
+          "var is function-scoped; let/const are block-scoped",
+          "const cannot be reassigned",
+          "var hoists with undefined; let/const hoist but stay TDZ"
+        ]
+      },
+      {
+        "id": "t_fs_3",
+        "difficulty": "medium",
+        "question": "What is CORS and why does it matter?",
+        "key_points": [
+          "CORS controls which domains can call the API",
+          "Browser blocks cross-origin requests by default",
+          "Server sets Access-Control-Allow-Origin header"
+        ]
+      }
+    ]
+  },
+  "behavioural": [
+    {
+      "id": "b1",
+      "question": "Tell me about a time you worked in a team to solve a difficult problem."
+    },
+    {
+      "id": "b2",
+      "question": "Describe a conflict with a teammate and how you resolved it."
+    },
+    {
+      "id": "b3",
+      "question": "Tell me about a time you missed a deadline and what you did."
+    },
+    {
+      "id": "b4",
+      "question": "Describe a failure and what you learned from it."
+    },
+    {
+      "id": "b5",
+      "question": "Tell me about a time you took leadership on a project."
+    },
+    {
+      "id": "b6",
+      "question": "Describe when you had to learn something new quickly."
+    },
+    {
+      "id": "b7",
+      "question": "Tell me about a time you gave constructive feedback to a peer."
+    },
+    {
+      "id": "b8",
+      "question": "Describe a time you had to adapt to a big change at work or school."
+    }
+  ],
+  "fallback_project": [
+    {
+      "id": "f1",
+      "question": "Walk me through a project on your resume — what was the goal?"
+    },
+    {
+      "id": "f2",
+      "question": "What was your specific role in that project and what did you build?"
+    },
+    {
+      "id": "f3",
+      "question": "What would you do differently if you started that project again?"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "status": "alert",
+  "findings": [{ "type": "hidden_overlay", "name": "python.exe", "pid": 4312, "title": "Demo Copilot Overlay", "detail": "Window is hidden from screen sharing (always on top, transparent layer)", "time": "14:02:11" }],
+  "active": true,
+  "reason": "",
+  "last_scan": "14:02:11"
+}
